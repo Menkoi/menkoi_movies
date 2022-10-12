@@ -15,3 +15,15 @@
 .navbar a:hover {
   color: grey;
 }
+
+.homepage {
+  text-align: center;
+}
+
+.banner {
+  width: 100%;
+}
+
+.poster{
+  width:15%;
+}
