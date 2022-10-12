@@ -24,6 +24,25 @@
   width: 100%;
 }
 
+/* Content 1 */
+.content1 {
+  display: flex;
+}
+
+.box {
+  text-align: center;
+  width: 100%;
+  padding: 15px;
+}
+
+.title {
+  margin-bottom: 10px;
+}
+
+.desc {
+  font-size: smaller;
+}
+
 .poster{
-  width:15%;
+  width:30%;
 }
