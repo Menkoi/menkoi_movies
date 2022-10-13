@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/menkoi_movies/static/css/main.5bb85449.css",
-    "main.js": "/menkoi_movies/static/js/main.6327e16f.js",
+    "main.css": "/menkoi_movies/static/css/main.3d91473f.css",
+    "main.js": "/menkoi_movies/static/js/main.f9ad51e9.js",
     "static/js/787.d0279e5b.chunk.js": "/menkoi_movies/static/js/787.d0279e5b.chunk.js",
     "static/media/img1.png": "/menkoi_movies/static/media/img1.1d8e05d2e171580a688b.png",
     "index.html": "/menkoi_movies/index.html",
-    "main.5bb85449.css.map": "/menkoi_movies/static/css/main.5bb85449.css.map",
-    "main.6327e16f.js.map": "/menkoi_movies/static/js/main.6327e16f.js.map",
+    "main.3d91473f.css.map": "/menkoi_movies/static/css/main.3d91473f.css.map",
+    "main.f9ad51e9.js.map": "/menkoi_movies/static/js/main.f9ad51e9.js.map",
     "787.d0279e5b.chunk.js.map": "/menkoi_movies/static/js/787.d0279e5b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5bb85449.css",
-    "static/js/main.6327e16f.js"
+    "static/css/main.3d91473f.css",
+    "static/js/main.f9ad51e9.js"
   ]
 }
