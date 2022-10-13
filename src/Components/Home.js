@@ -31,15 +31,15 @@ function Home() {
   return (
     <div className="homepage">
       <img className="banner" src={img1} alt="" />
-      <h1>Featured Movies</h1>
+      <h1>Trending Movies</h1>
 
       <div className="trending">
         {data.map((movie) => (
-          <img
-            src={"https://image.tmdb.org/t/p/original" + movie.poster_path}
-            alt=""
-            className="poster"
-          />
+          <div class="container">
+            <h3 class="title">{movie.title}</h3>
+            <img src={"https://image.tmdb.org/t/p/original" + movie.poster_path} alt="" className="poster"/>
+            <p class="desc">{movie.tagline}</p>
+          </div>
         ))}
       </div>
     </div>

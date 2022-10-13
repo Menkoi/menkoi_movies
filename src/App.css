@@ -16,7 +16,13 @@
 }
 
 .homepage {
+  font-family: "Source Sans Pro", sans-serif;
   text-align: center;
+  color: aliceblue;
+  background: #536976;
+  background: -moz-linear-gradient(45deg, #536976 0%, #292E49 100%);
+  background: -webkit-linear-gradient(45deg, #536976 0%, #292E49 100%);
+  background: linear-gradient(45deg, #536976 0%, #292E49 100%);
 }
 
 .banner {
@@ -27,13 +33,34 @@
 
 /* Content 1 */
 .trending {
-  display: flex;
-  overflow-y: scroll;
-  margin: 25px;
-  background-color: whitesmoke;
+  display: grid;
+  margin-left: 5px;
+  grid-template-columns: repeat(6,1fr);
+  grid-gap: 2px;
+  justify-content: center;
+}
+
+.title {
+  margin-top: 15px;
+  font-size: 20px;
 }
 
 .poster{
-  width:250px;
+  width: 200px;
   padding: 10px;
+  border-radius: 10px;
+  background-color: #fff;
+  -webkit-box-shadow: 7px 9px 15px 5px #000000; 
+  box-shadow: 7px 9px 15px 5px #000000;
+}
+
+.poster:hover {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+
+@keyframes fade {
+  from {opacity: 0.0}
+  to {opacity: 1}
 }
