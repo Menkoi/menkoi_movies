@@ -8,79 +8,42 @@ import img1 from '../img/img1.png';
 //import { Carousel } from 'bootstrap';
 
 function Home() {
-    const [data, setData] = useState([]);
+  const [data, setData] = useState([]);
 
-    const redAlert = async() => {
-         //Api fetch
-         await axios.get('https://api.themoviedb.org/3/trending/movie/week?api_key=edb165d5b232d239e5b43f306c09e004')
-         .then(res => {
-            console.log(res.data.results)
-            setData(res.data.results)
-        })
-        // Catch Error
-        .catch(err => {
-            console.log(err)
-        })
-    }
+  const redAlert = async () => {
+    //Api fetch
+    await axios
+      .get("https://api.themoviedb.org/3/trending/movie/week?api_key=edb165d5b232d239e5b43f306c09e004")
+      .then((res) => {
+        console.log(res.data.results);
+        setData(res.data.results);
+      })
+      // Catch Error
+      .catch((err) => {
+        console.log(err);
+      });
+  };
 
-    useEffect(() => {
-        redAlert();
-    },[])
+  useEffect(() => {
+    redAlert();
+  }, []);
 
-    return(
-        <div className='homepage'>
-            <img className='banner' src={img1} alt=''/>
-            <h1>Weekly Trending Movies</h1>
+  return (
+    <div className="homepage">
+      <img className="banner" src={img1} alt="" />
+      <h1>Featured Movies</h1>
 
-            <div class="content1">
-        <div class="box">
-            <h3 class="title"></h3>
-            <img src={"https://image.tmdb.org/t/p/original" + data.poster_path} alt="" className="poster"/>
-            <p class="desc"></p>
-        </div>
-
-        <div class="box">
-            <h3 class="title">Lorem</h3>
-            <img src="./img/gallery1.jpg" alt="" class="con1Img"/>
-            <p class="desc">Lorem
-            </p>
-        </div>
-
-        <div class="box">
-            <h3 class="title">Lorem</h3>
-            <img src="./img/gallery1.jpg" alt="" class="con1Img"/>
-            <p class="desc">Lorem
-            </p>
-        </div>
-
-        <div class="box">
-            <h3 class="title">Lorem</h3>
-            <img src="./img/gallery1.jpg" alt="" class="con1Img"/>
-            <p class="desc">Lorem
-            </p>
-        </div> 
-    </div>
-
-    <div className="container">
+      <div className="trending">
         {data.map((movie) => (
-            <div class="box">
-            <h3 class="title">{movie.title}</h3>
-            <img src={"https://image.tmdb.org/t/p/original" + movie.poster_path} alt="" className="poster"/>
-        </div>
+          <img
+            src={"https://image.tmdb.org/t/p/original" + movie.poster_path}
+            alt=""
+            className="poster"
+          />
         ))}
+      </div>
     </div>
-
-    
-            
-
-            
-           
-        </div>
-        
-
-        
-        
-    )
+  );
 }
 
 export default Home;

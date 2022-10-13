@@ -1,5 +1,4 @@
 
-
 /* Navbar */
 .navbar {
   background-color: rgb(8, 7, 7);
@@ -21,28 +20,20 @@
 }
 
 .banner {
-  width: 100%;
+  width: 90%;
+  margin-bottom: 25px;
+  margin-top: 25px;
 }
 
 /* Content 1 */
-.content1 {
+.trending {
   display: flex;
-}
-
-.box {
-  text-align: center;
-  width: 100%;
-  padding: 15px;
-}
-
-.title {
-  margin-bottom: 10px;
-}
-
-.desc {
-  font-size: smaller;
+  overflow-y: scroll;
+  margin: 25px;
+  background-color: whitesmoke;
 }
 
 .poster{
-  width:30%;
+  width:250px;
+  padding: 10px;
 }

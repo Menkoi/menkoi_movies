@@ -8,8 +8,7 @@ import Nav from './Components/Navbar';
 import Home from './Components/Home';
 import About from './Components/About';
 import Contact from './Components/Contact';
-
-// Need to add Btn 3 and Btn 4
+import Search from './Components/Search';
 
 function App() {
   return (
@@ -18,6 +17,8 @@ function App() {
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/home' element={<Home/>} />
+        <Route path='/menkoi_movies' element={<Home/>} />
+        <Route path='/search' element={<Search/>} />
         <Route path='/about' element={<About/>}/>
         <Route path='/contact' element={<Contact/>}/>
       </Routes>
